@@ -1,0 +1,204 @@
+CSHL Cereal Genomics -- Differential Expression by RNAseq
+
+[---Description---]
+
+Hands-on RNAseq: from maize sequence to developmental inference
+
+In this series, we will cover the experimental, technical, and computational considerations of RNAseq analysis.
+We will use command-line tools in an unix environment and graphical R interface provided by CyVerse Atmosphere 
+to analyze unpublished data from a maize family that is segregating two unlinked mutations. 
+
+Starting with raw sequence data, we will 
+1) perform initial quality control, 
+2) alignment to a reference genome with a graph-based aligner, 
+3) read counting using an union-exon counting method, 
+4) read abundance normalization and differential expression analysis,
+5) visualize sequencing reads, gene expression, differential gene lists
+6) machine learning with inference trees to categorize new data
+
+After this course, students will feel comfortable discussing multiple aspects of RNAseq experimental design and execution.
+Using the pipeline and discussion from this course, students will be able to use CyVerse Atmosphere to conduct a variety of analyses as needed for their own research.
+
+Mutants
+
+narrow odd dwarf (nod) -
+Liguleless narrow (Lgn) - 
+
+softwares in use
+
+fastp
+hisat2
+featureCounts (subread)
+R/DESeq2
+R/randomForest
+R/ggplot2
+
+installation and set up night before!
+
+[---Outline---]
+
+Using base image, install conda, set up conda env for command line computation
+	0. Registration + CyVerse instancing
+	1. Conda and environment management - sudo chown $(whoami) /scratch, Install conda
+	2. Alignment and Counting - New conda env fastp, samtools, hisat2, subread
+	3. DEG and analysis - New conda env r_env r-essentials r-base r-ggplot2 r-deseq2 r-pheatmap r-venndiagram
+
+
+[---0. Startup---]
+
+*Night before class
+	CyVerse registration
+	Register with course: https://user.cyverse.org/workshops/43/overview
+
+*Before Eveland lecture
+	Startup instance
+	
+[---1. Conda and environment management---]
+
+*After Eveland lecture
+Welcome to the command line
+	Some basic commands
+		ls, cd, top, head, less, cat
+	Using pipes and capturing output streams
+		Example: cat * | wc -l #counts the number of lines in * files
+	Manual pages
+		or Google is your BFF
+	Project directory management
+	sudo chown $(whoami) /scratch
+Installing conda and environment management
+	Command line tools have lots of dependancies; environment managers can keep them sorted
+	Install conda, say yes a bunch, and 'source ~/.bashrc'
+		# conda this step is interactive-- use a terminal
+		wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+		bash Miniconda3-latest-Linux-x86_64.sh
+		# scroll down and say 'yes'
+		
+		conda config --add channels defaults
+		conda config --add channels bioconda
+		conda config --add channels conda-forge
+		
+	Create new conda environment for RNAseq alignment and counting
+		conda config --set changeps1 false
+		conda install -y --name alignment python=3.6 fastp samtools hisat2 subread
+*Move on to RNAseq lesson while env solves
+		conda activate alignment
+		
+[---2. RNAseq Alignment and Counting---]
+
+What is RNAseq?
+	What can you do with RNAseq?
+	Outline of steps for differential expression analysis
+		Experiment design -- replicates vs depth
+		Sequencing -- full length transcript vs 3'UTR
+		Quality control
+		Alignment
+		Read counting
+		Differential expression
+		Analysis
+
+Setting up an RNAseq experiment
+	Our example -- Lgn;nod, Lgn, nod, Wild-Type
+		What questions can we ask with RNAseq?
+	Experiment design -- Genomics: Garbage in, garbage out
+		Minimize confounding factors
+		Number of replicates vs sequencing depth
+	Library preparation and sequencing chemistry
+		Full length transcript vs 3'UTR enrichment
+		Illumina sequence length -- longer is not always better
+	
+*activate conda env
+		conda activate alignment
+
+Short read data structures
+	What is FASTQ format?
+	Exercise: head, less, tail, wc to browse data
+	
+Illumina short read quality control
+	Quality statistics
+	Adapter contamination + trimming
+	Exercise: Run fastp, transfer to personal computer to view
+	
+Before you align
+	Reference genomes and where to find them
+		.fa files
+		.gtf and .gff files
+	Exercise: find the most recent maize reference genome
+	
+Basics of alignment
+	What is an alignment?
+		BLAST as an example
+		Quick explanation of graph-based aligners
+	What aligners are out there? What are they good at?
+		Genomic -- Bowtie2
+		Long genomic -- minimap2
+		Rapid pseudoalign -- Kallisto + Salmon
+		Transcriptomic -- HiSAT2 (tophat2)
+	How do you run an alignment command?
+		Normally, we would create a genome index, but we will skip to save time...
+	Exercise: Browse HiSAT2 manual, discuss general command, which options and determining values
+	Exercise: Run alignment for 1 file as .sam
+	
+Browsing aligned-read pileup
+	Exercise: Use head to look at .sam format
+	Visualize an alignment with IGV
+	Discuss EPIC CoGe, JBrowse
+	
+	Run: Alignment of all files
+	
+Read counting
+	Discuss read counting methods: Union-exon models, expectation maximization (EM)
+	Example read counters
+		Flexible reference-based: featureCounts
+		Reference, with option of novel splice forms: stringtie2 
+	
+[---3. DEG and analysis---]
+
+Switch conda environments (or start install.packages on personal machines)
+		conda install -y --name DEG python=3.6 r_env r-essentials r-base r-ggplot2 r-deseq2 r-pheatmap
+		
+*Move on to DEG discussion while env solves or folks run packages.install
+* and download from datastore/github
+		conda activate DEG
+
+What is differential expression (DE) analysis?
+	Read abundance estimation -- why do it?
+		Examples of data bias
+
+Common read abundance methods
+	Brief overview: Negative binomial, Poisson distributions, expectation maximization (EM)	
+	Examples
+		Isoform from alignments -- cufflinks, stringtie2/ballgown
+		Isoforms from pseudoalignments -- sleuth
+		General DE tools -- DEseq2 (conservative), edgeR (promiscuous)
+	
+**Log into Instance using VNC viewer**
+
+Differential expression analysis using DESeq2
+	What is R? Can you do DE on your own, not super- computer? YES!
+		Exercise: Browse DESeq2 manual page, view user vignette, discuss
+		Exercise: start R, import count data, browse count data
+	Experimental quality control
+		PCA plot -- trends and outliers
+		Check genes of interest
+	Using generalized linear models (GLM) methods for DE
+		What's so good about GLMs? Ex. ligule data with amplification kit effect
+		Exercise: assign factors, create model matrix, estimate abundances, calculate DE
+
+Analyzing DE results
+	Making quick venn diagrams	
+	What are GO terms?
+		Exercise: run AgriGO parametric enrichment tool on DE genes together
+	Gene clustering methods
+		Examples
+			Hierarchical
+			K-means + self-organizing maps
+	Other questions/hypotheses? Let's discuss!
+
+What else can you do with transcript expression levels?
+	Network analysis and WGCNA
+	Expression values as a phenotype
+		eQTL / TWAS
+		Machine learning to predict phenotype
+			Many methods, with different assumptions
+				Discussion: DNN + CNN, SVM
+				Inference trees and random forest walks

@@ -1,0 +1,13 @@
+Status	./aligned_reads/dbl57_S52.bam
+Assigned	4034372
+Unassigned_Unmapped	1377431
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	782255
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	354645
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	88268

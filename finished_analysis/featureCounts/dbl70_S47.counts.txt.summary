@@ -1,0 +1,13 @@
+Status	./aligned_reads/dbl70_S47.bam
+Assigned	64619
+Unassigned_Unmapped	23289
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	13149
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	5980
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	1402

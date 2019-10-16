@@ -1,0 +1,13 @@
+Status	./aligned_reads/dbl9_S45.bam
+Assigned	5233657
+Unassigned_Unmapped	1960924
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	1122141
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	480303
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	116146

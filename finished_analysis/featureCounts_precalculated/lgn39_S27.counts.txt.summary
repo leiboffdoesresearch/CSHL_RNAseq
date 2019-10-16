@@ -1,0 +1,13 @@
+Status	./aligned_reads/lgn39_S27.bam
+Assigned	3422846
+Unassigned_Unmapped	1247802
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	659508
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	295390
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	80053

@@ -1,0 +1,13 @@
+Status	./aligned_reads/nod36_S21.bam
+Assigned	4389377
+Unassigned_Unmapped	1692314
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	919907
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	430677
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	101090

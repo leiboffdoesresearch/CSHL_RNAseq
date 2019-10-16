@@ -1,0 +1,13 @@
+Status	./aligned_reads/dbl31_S41.bam
+Assigned	4969276
+Unassigned_Unmapped	2452627
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	1201021
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	499340
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	111565

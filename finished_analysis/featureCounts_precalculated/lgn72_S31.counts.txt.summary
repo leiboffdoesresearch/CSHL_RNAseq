@@ -1,0 +1,13 @@
+Status	./aligned_reads/lgn72_S31.bam
+Assigned	2951643
+Unassigned_Unmapped	1121677
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	500406
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	234521
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	65210

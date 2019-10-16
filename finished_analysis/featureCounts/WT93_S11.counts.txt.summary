@@ -1,0 +1,13 @@
+Status	./aligned_reads/WT93_S11.bam
+Assigned	55339
+Unassigned_Unmapped	28724
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	15161
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	9425
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	1012

@@ -1,0 +1,13 @@
+Status	./aligned_reads/dbl89_S40.bam
+Assigned	4557429
+Unassigned_Unmapped	2205942
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	1083796
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	468040
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	103499

@@ -1,0 +1,13 @@
+Status	./aligned_reads/dbl54_S44.bam
+Assigned	3841565
+Unassigned_Unmapped	1774546
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	908519
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	388316
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	86678

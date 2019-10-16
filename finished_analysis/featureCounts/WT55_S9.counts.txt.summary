@@ -1,0 +1,13 @@
+Status	./aligned_reads/WT55_S9.bam
+Assigned	67058
+Unassigned_Unmapped	22397
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	10310
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	5056
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	1494

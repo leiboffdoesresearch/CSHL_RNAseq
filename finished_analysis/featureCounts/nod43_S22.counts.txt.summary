@@ -1,0 +1,13 @@
+Status	./aligned_reads/nod43_S22.bam
+Assigned	64893
+Unassigned_Unmapped	22571
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	13188
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	6397
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	1337

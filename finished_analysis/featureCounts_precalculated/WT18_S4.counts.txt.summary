@@ -1,0 +1,13 @@
+Status	./aligned_reads/WT18_S4.bam
+Assigned	3788654
+Unassigned_Unmapped	1491110
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	768591
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	355999
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	93024

@@ -1,0 +1,13 @@
+Status	./aligned_reads/WT97_S1.bam
+Assigned	4237774
+Unassigned_Unmapped	2383275
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	922919
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	590826
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	88032

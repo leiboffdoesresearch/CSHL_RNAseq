@@ -1,0 +1,13 @@
+Status	./aligned_reads/lgn17_S35.bam
+Assigned	3962402
+Unassigned_Unmapped	1633234
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	840862
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	351799
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	99844

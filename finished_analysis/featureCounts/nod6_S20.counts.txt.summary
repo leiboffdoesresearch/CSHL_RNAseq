@@ -1,0 +1,13 @@
+Status	./aligned_reads/nod6_S20.bam
+Assigned	66936
+Unassigned_Unmapped	21569
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	10919
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	5733
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	1598

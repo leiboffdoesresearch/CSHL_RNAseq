@@ -1,0 +1,13 @@
+Status	./aligned_reads/dbl66_S49.bam
+Assigned	61973
+Unassigned_Unmapped	25787
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	14069
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	5965
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	1373

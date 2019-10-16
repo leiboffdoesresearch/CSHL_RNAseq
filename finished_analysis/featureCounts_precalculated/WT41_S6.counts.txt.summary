@@ -1,0 +1,13 @@
+Status	./aligned_reads/WT41_S6.bam
+Assigned	4195423
+Unassigned_Unmapped	1426867
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	756741
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	334395
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	100216

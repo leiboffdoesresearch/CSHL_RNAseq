@@ -1,0 +1,13 @@
+Status	./aligned_reads/nod16_S15.bam
+Assigned	3814702
+Unassigned_Unmapped	1114386
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	649551
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	270692
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	91281

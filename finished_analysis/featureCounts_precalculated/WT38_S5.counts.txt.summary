@@ -1,0 +1,13 @@
+Status	./aligned_reads/WT38_S5.bam
+Assigned	4324986
+Unassigned_Unmapped	1551271
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	813215
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	444964
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	93526

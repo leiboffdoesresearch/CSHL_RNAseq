@@ -1,0 +1,13 @@
+Status	./aligned_reads/WT13_S12.bam
+Assigned	3212304
+Unassigned_Unmapped	1394765
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	658686
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	420937
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	66045

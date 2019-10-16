@@ -1,0 +1,13 @@
+Status	./aligned_reads/dbl28_S48.bam
+Assigned	4830395
+Unassigned_Unmapped	1592224
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	842751
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	443623
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	101785

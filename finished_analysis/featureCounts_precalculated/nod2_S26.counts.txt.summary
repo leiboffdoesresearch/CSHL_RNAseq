@@ -1,0 +1,13 @@
+Status	./aligned_reads/nod2_S26.bam
+Assigned	4060861
+Unassigned_Unmapped	2575716
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	919161
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	481976
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	90121
